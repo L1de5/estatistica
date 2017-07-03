@@ -1,0 +1,32 @@
+
+div.corpo {
+  max-width: 1000px;
+
+}
+div.histograma {
+  width: 60%;
+  height: 300px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+div.coluna {
+  height: 60px;
+  background-color: silver;
+  margin: 10px 0px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: white;
+  text-shadow: 2px 2px black;
+  width: 50px;
+  transition: height 1s ease-out;
+}
+
+div.valores p {
+  display: inline-block;
+  margin-right: 0.5em;
+}
+div.valores p:not(:last-child)::after {
+  content: ',';
+}
