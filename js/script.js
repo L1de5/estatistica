@@ -74,6 +74,7 @@ const Valores = {
       total += c.contagem;
     }
     for (let c of this.classes) c.desenha(escala);
+    if((Valores.valores.length - total) > escala) escala = Valores.valores.length - total;
     if(total === 0){
       tamanho = (Valores.valores.length - total) / Valores.valores.length * 100;
       nc.style.height = `${tamanho}%`;
