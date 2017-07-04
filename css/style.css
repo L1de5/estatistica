@@ -1,0 +1,56 @@
+
+div.corpo {
+  max-width: 1000px;
+
+}
+div.histograma {
+  width: 80%;
+
+}
+div.colunas{
+  height: 300px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+}
+div.escrever label{
+  padding-left: 15.5px;
+  padding-right: 15.5px;
+}
+div.coluna {
+  height: 5px;
+  background-color: red;
+  margin: 10px 0px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: white;
+  text-shadow: 2px 2px black;
+  width: 50px;
+  transition: height 1s ease-out;
+  vertical-align: middle;
+  margin-left: 10px;
+
+}
+div.nc {
+  height: 5px;
+  background-color: red;
+  margin: 10px 0px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: white;
+  text-shadow: 2px 2px black;
+  width: 50px;
+  transition: height 1s ease-out;
+  vertical-align: middle;
+  margin-left: 10px;
+
+}
+div.valores p {
+  display: inline-block;
+  margin-right: 0.5em;
+}
+div.valores p:not(:last-child)::after {
+  content: ',';
+}
