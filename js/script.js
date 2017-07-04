@@ -68,7 +68,7 @@ const Valores = {
     total = 0;
     for (let c of this.classes) {
       c.zerar();
-      total = 0;sss
+      total = 0;
       for (let n of this.valores) c.conta(n);
       if (c.contagem > escala) escala = c.contagem;
       total += c.contagem;
