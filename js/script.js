@@ -65,9 +65,10 @@ const Valores = {
     desvio.textContent = this.desvio;
 
     let escala = 0;
-    let total = 0;
+    total = 0;
     for (let c of this.classes) {
       c.zerar();
+      total = 0;sss
       for (let n of this.valores) c.conta(n);
       if (c.contagem > escala) escala = c.contagem;
       total += c.contagem;
